@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/titleimg.png">
+    <title>TrendZyee:Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script type="module" crossorigin src="/assets/products-3oA_NF9U.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/assets/showToast2-CWT3mgRc.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-CouMlErR.css">
+</head>
+<body>
+    <!-- Start Header Section -->
+    <header class="section-navbar">
+        <section class="top_txt">
+            <div class="head container">
+                <div class="head_text">
+                    <marquee><p>Free shipping, 30-day return or refund guarantee.</p></marquee>
+                </div>
+            <div class="login_in_up">
+                <a href="login.html">Log In </a>
+            </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                <img src="/images/blacklogo.png" alt="Brand Logo" class="logo" width="100%" height="auto">
+                </a>
+            </div>
+
+        <nav class="navbar">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about us.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contactus.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="addtocart.html" class="nav-link and add-to-cart" id="cartValue">
+                    <i class="fa-solid fa-cart-shopping">&nbsp;0</i>
+                    </a>
+                </li>
+            </ul>
+        </nav>  
+        </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Our Product Section  -->
+    <section class="section-products container" >
+        <section class="container">
+            <div id="productContainer"></div>
+        </section>
+    </section> 
+    <!-- Start Template Section  -->
+    <template id="productTemplate">
+        <div class="cards" id="cardValue">
+            <article class="information [card]">
+                <span class="category"></span>
+                <div class="imageContainer">
+                    <img class="productImage" src="" alt="">
+                </div>
+                <h2 class="productName"></h2>
+                <div class="productRating">
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffd700;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #ffd700;"></i>
+                </div>
+
+                <p class="productDescription"></p>
+                <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                </div>
+
+                <div class="productStockElement">
+                    <p class="productProperty">Total Stock Available:</p>
+                    <p class="productStock"></p>
+                </div>
+
+                <div class="productQuantityElement">
+                    <p class="productProperty">Quantity</p>
+                    <div class="stockElement">
+                        <button class="cartDecrement">-</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartIncrement">+</button>
+                    </div>    
+                </div>
+
+                <button class="add-to-cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+                </button>
+            </article>
+        </div>
+    </template>
+    <!-- End Template Section  -->
+    <!-- End Our Product Section  -->
+
+     <!-- Start Footer Section  -->
+     <footer class="section-footer">
+        <div class="footer-container container">
+            <div class="content_1">
+                <img src="/images/whitelogo.png" alt="Logo">
+                <p>
+                    Welcome to TrendZyee, Your Ultimate Destination for All products
+                </p>
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="card">
+            </div>
+
+            <div class="content_2">
+                <h4>Shopping</h4>
+                <a href="#">Branded Shoes</a>
+                <a href="#">Branded Clothes</a>
+                <a href="#">Accessories</a>
+                <a href="#">Sales & Discount</a>
+            </div>
+
+            <div class="content_3">
+                <h4>Experience</h4>
+                <a href="#">Contact Us</a>
+                <a href="#" target="_blank">Payment Method</a>
+                <a href="#" target="_blank">Delivery</a>
+                <a href="#" target="_blank">Return & Exchange</a>
+            </div>
+
+            <div class="content_4">
+                <h4>NEWSLETTER</h4>
+                <p>Be the to know about new<br>Arrivals, Sales & Promos!</p>
+                <div class="f-mail">
+                    <input type="email"  placeholder="Your Email" required>
+                </div>
+            </div>
+        </div>
+        <div class="f-design">
+            <div class="f-design-txt">
+                <p>Copyright &copy; 2024 TrendZyee Inc. All rights Not reserved.</p>
+            </div>
+        </div>
+     </footer>
+    <!-- End Footer Section  -->
+
+</body>
+</html>
