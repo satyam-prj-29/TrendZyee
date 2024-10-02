@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/titleimg.png">
+    <title>TrendZyee:AddTocart</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:wght@300;400;500;700&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/addToCart-CLE7oAm_.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/assets/showToast-DhnyLk4A.js">
+    <link rel="modulepreload" crossorigin href="/assets/showToast2-CWT3mgRc.js">
+    <link rel="stylesheet" crossorigin href="/assets/style-CouMlErR.css">
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="section-navbar">
+      <section class="top_txt">
+          <div class="head container">
+              <div class="head_text">
+                <marquee><p>Free shipping, 30-day return or refund guarantee.</p></marquee>
+              </div>
+          <div class="login_in_up">
+              <a href="login.html">Log In </a>
+          </div>
+          </div>
+      </section>
+      <div class="container">
+          <div class="navbar-brand">
+              <a href="index.html">
+              <img src="/images/blacklogo.png" alt="Brand Logo" class="logo" width="100%" height="auto">
+              </a>
+          </div>
+
+      <nav class="navbar">
+          <ul>
+              <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="about us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="products.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                  <a href="contactus.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a href="addtocart.html" class="nav-link and add-to-cart" id="cartValue">
+                  <i class="fa-solid fa-cart-shopping">&nbsp;0</i>
+                  </a>
+              </li>
+          </ul>
+      </nav>  
+      </div>
+  </header>
+  <!-- End Header Section -->
+
+    <section class="addToCartElement">
+      <div class="container">
+        <section>
+          <div id="productCartContainer"></div>
+        </section>
+
+        <section class="productCartTotalElem">
+          <div class="productCartTotalElement">
+            <p>Selected Product Summary</p>
+            <div class="productOrderTotal">
+              <div>
+                <p>Total:</p>
+                <p class="productSubTotal">0</p>
+              </div>
+              <div>
+                <p>Tax:</p>
+                <p class="productTax">+18%</p>
+              </div>
+              <br><br>
+              <div>
+                <p>Price To Pay:</p>
+                <p class="productFinalTotal">0</p>
+              </div>
+            </div>
+            <a id="buy-now-link" href="#">
+              <button class="buy-button" >Proceed to Buy</button>
+            </a>
+          </div>
+        </section>
+        
+      </div>
+    </section>
+
+    <!-- Template for a product -->
+    <template id="productCartTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [ card ]">
+          <div>
+            <span class="category"></span>
+          </div>
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="" />
+          </div>
+
+          <h2 class="productName"></h2>
+
+          <p class="productPrice"></p>
+
+          <div class="stockElement">
+            <button class="cartDecrement">-</button>
+              <p class="productQuantity" data-quantity="1">1</p>
+            <button class="cartIncrement">+</button>
+          </div>
+
+          <button class="add-to-cart-button remove-to-cart-button">Remove</button>
+        </article>
+      </div>
+    </template>
+
+    <!-- Start Footer Section  -->
+    <footer class="section-footer">
+      <div class="footer-container container">
+          <div class="content_1">
+              <img src="/images/whitelogo.png" alt="Logo">
+              <p>
+                  Welcome to TrendZyee, Your Ultimate Destination for All products
+              </p>
+              <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="card">
+          </div>
+
+          <div class="content_2">
+              <h4>Shopping</h4>
+              <a href="#">Branded Shoes</a>
+              <a href="#">Branded Clothes</a>
+              <a href="#">Accessories</a>
+              <a href="#">Sales & Discount</a>
+          </div>
+
+          <div class="content_3">
+              <h4>Experience</h4>
+              <a href="#">Contact Us</a>
+              <a href="#" target="_blank">Payment Method</a>
+              <a href="#" target="_blank">Delivery</a>
+              <a href="#" target="_blank">Return & Exchange</a>
+          </div>
+
+          <div class="content_4">
+              <h4>NEWSLETTER</h4>
+              <p>Be the to know about new<br>Arrivals, Sales & Promos!</p>
+              <div class="f-mail">
+                  <input type="email"  placeholder="Your Email" required>
+              </div>
+          </div>
+      </div>
+      <div class="f-design">
+          <div class="f-design-txt">
+              <p>Copyright &copy; 2024 TrendZyee Inc. All rights Not reserved.</p>
+          </div>
+      </div>
+    </footer>
+    <!-- End Footer Section  -->
+   <!-- <script>
+        let buyNowLink = document.getElementById("buy-now-link");
+        let buyNowButton = document.querySelector(".buy-button");
+            
+        function checkLocalStorage() {
+          if (localStorage.getItem("cartProductLS")) {
+            let cartProductLS = JSON.parse(localStorage.getItem("cartProductLS"));
+            if (cartProductLS.length > 0) {
+              buyNowButton.disabled = false;
+              buyNowLink.href = "buypage.html";
+            } else {
+              // If the array is empty, disable the button
+              buyNowButton.disabled = true;
+              buyNowLink.href = "#"; // disable link when button is disabled
+            }
+          } else {
+            // If the array doesn't exist, disable the button
+            buyNowButton.disabled = true;
+            buyNowLink.href = "#"; // disable link when button is disabled
+          }
+        }
+        // Initial check
+        checkLocalStorage();
+    </script> -->
+  </body>
+</html>
